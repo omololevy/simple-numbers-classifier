@@ -1,10 +1,10 @@
 print('THIS PROGRAM REQUESTS A LIST OF NUMBERS FROM YOU AND SORTS THEM AS:\n * EVEN.\n * ODD.\n * PRIME.')
 size = int(input("Enter the size of your list (i.e a list of size 5 will have five numbers, e.g [20, 2, 70, 4, 63])\n"))
 your_list=[]
-first_value = int(input('Enter the first number in the list\n'))
+first_value = int(input('Enter the first number in the list: '))
 your_list.append(first_value)
 while len(your_list) < size:
-    another_value = int(input('Enter the next number\n'))
+    another_value = int(input('Enter the next number: '))
     your_list.append(another_value)
     print(your_list)
     odd = []
@@ -26,21 +26,20 @@ for i in your_list:
         
     else:
         odd.append(i)
-if len(even) < 2:
-    print('Even number is ', len(even)) 
-    print('It is ', even)
+    even_count = len(even)
+    odd_count = len(odd)
+    prime_count = len(prime)
+print('\n************SOLUTION************')
+print(f'The list is {your_list} of size {size}\n')
+if even_count < 2:
+    print(f'Even number is {even_count}: {even}\n') 
 else:  
-    print('Even numbers are ', len(even))
-    print('They are: ', even)
-if len(odd) < 2:
-    print('Odd number is ', len(odd))
-    print('It is ', odd) 
+    print(f'Even numbers are {even_count}: {even}\n') 
+if odd_count < 2:
+    print(f'Odd number is {odd_count}: {odd}\n')
 else:  
-    print('Odd numbers are ', len(odd))
-    print('They are: ', odd)
-if len(prime) < 2:
-    print('Prime number is ', len(prime)) 
-    print('It is ', prime)
+    print(f'Odd numbers are {odd_count}: {odd}\n')
+if prime_count < 2:
+    print(f'Prime number is {prime_count}: {prime}\n')
 else:  
-    print('Prime numbers are ', len(prime))
-    print('They are: ', prime)
+    print(f'Prime numbers are {prime_count}: {prime}\n')
