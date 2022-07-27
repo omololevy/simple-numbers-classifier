@@ -10,3 +10,19 @@ while len(your_list) < size:
     odd = []
     even = []
     prime = []
+for i in your_list:
+    alarm = False
+    if int(i)>1:
+        for x in range(2, int(i)):
+            if int(i)%x == 0:
+                alarm = True
+                break
+        if alarm:
+            pass
+        else:
+            prime.append(i)
+    if int(i) % 2 == 0:
+        even.append(i)
+        
+    else:
+        odd.append(i)
