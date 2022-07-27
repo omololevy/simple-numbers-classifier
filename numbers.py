@@ -26,3 +26,21 @@ for i in your_list:
         
     else:
         odd.append(i)
+if len(even) < 2:
+    print('Even number is ', len(even)) 
+    print('It is ', even)
+else:  
+    print('Even numbers are ', len(even))
+    print('They are: ', even)
+if len(odd) < 2:
+    print('Odd number is ', len(odd))
+    print('It is ', odd) 
+else:  
+    print('Odd numbers are ', len(odd))
+    print('They are: ', odd)
+if len(prime) < 2:
+    print('Prime number is ', len(prime)) 
+    print('It is ', prime)
+else:  
+    print('Prime numbers are ', len(prime))
+    print('They are: ', prime)
