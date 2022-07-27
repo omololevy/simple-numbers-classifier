@@ -1,4 +1,4 @@
-print('THIS PROGRAM REQUEST A LIST OF NUMBERS FROM A USER AND SORTS THEM AS:\n * EVEN.\n * ODD.\n * PRIME.')
+print('THIS PROGRAM REQUESTS A LIST OF NUMBERS FROM YOU AND SORTS THEM AS:\n * EVEN.\n * ODD.\n * PRIME.')
 size = int(input("Enter the size of your list (i.e a list of size 5 will have five numbers, e.g [20, 2, 70, 4, 63])\n"))
 your_list=[]
 first_value = int(input('Enter the first number in the list\n'))
@@ -12,16 +12,16 @@ while len(your_list) < size:
     prime = []
 for i in your_list:
     alarm = False
-    if int(i)>1:
-        for x in range(2, int(i)):
-            if int(i)%x == 0:
+    if i>1:
+        for x in range(2, i):
+            if i%x == 0:
                 alarm = True
                 break
         if alarm:
             pass
         else:
             prime.append(i)
-    if int(i) % 2 == 0:
+    if i % 2 == 0:
         even.append(i)
         
     else:
